@@ -7,8 +7,8 @@ services:
       args:
         PROJECT: canto
         PROJECT_BIN: cantod
-        VERSION: ethermint-v2-backport
-        REPOSITORY: https://github.com/okanisis/Canto
+        VERSION: v5.0.0
+        REPOSITORY: https://github.com/Canto-Network/Canto
         NAMESPACE: CANTOD
         PROJECT_DIR: .cantod
         GOLANG_VERSION: 1.19-buster
@@ -18,7 +18,7 @@ services:
       - '1317:1317'
       - '9090:9090'
       - '9091:9091'
-      - '8545:8546'
+      - '8545:8545'
     environment:
       - MONIKER=node_1
       - CHAIN_JSON=https://github.com/cosmos/chain-registry/raw/master/canto/chain.json
