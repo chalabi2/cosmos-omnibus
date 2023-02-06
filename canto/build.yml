@@ -7,8 +7,8 @@ services:
       args:
         PROJECT: canto
         PROJECT_BIN: cantod
-        VERSION: main
-        REPOSITORY: https://github.com/Canto-Network/Canto
+        VERSION: ethermint-v2-backport
+        REPOSITORY: https://github.com/okanisis/Canto
         NAMESPACE: CANTOD
         PROJECT_DIR: .cantod
         GOLANG_VERSION: 1.19-buster
