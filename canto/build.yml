@@ -7,7 +7,7 @@ services:
       args:
         PROJECT: canto
         PROJECT_BIN: cantod
-        VERSION: v5.0.0
+        VERSION: main
         REPOSITORY: https://github.com/Canto-Network/Canto
         NAMESPACE: CANTOD
         PROJECT_DIR: .cantod
@@ -18,7 +18,7 @@ services:
       - '1317:1317'
       - '9090:9090'
       - '9091:9091'
-      - '8145:8145'
+      - '8545:8546'
     environment:
       - MONIKER=node_1
       - CHAIN_JSON=https://github.com/cosmos/chain-registry/raw/master/canto/chain.json
